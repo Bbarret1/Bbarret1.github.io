@@ -1,0 +1,152 @@
+body {
+        margin: 0; /*undo the margin and padding initials on the body*/
+        padding: 0;
+        background-image: url(lizard.jpg); /*put that background image up in the background*/
+        background-attachment:fixed;    /*don't move the background image*/
+        background-position: 50% 50%;   /*center the image vertically and horizontally*/
+        background-size: cover;
+}
+body a{
+    text-decoration: none;  /*remove th eunderline from any hyperlinks in the body*/
+}
+
+
+
+
+#header{                /*the top bar*/
+    min-width: 900px;   /*don't let this get smaller than 900*/
+    position: fixed;    /*keep the bar at th eto of the page*/
+    top: 0;             /*start top*/
+    left: 0;            /*start left*/
+    width: 100%;        /*make the width from side to side*/
+    z-index: 10;
+    height: 60px;       /*make the hieght just 50px*/
+    background-color: #f6f6f6;     /*background color*/
+    font-size: 25px; /*font size*/
+    font-family: Eurostile, sans-serif; /*font*/
+    color: #6699cc; /*font color*/
+}
+#header ul{
+    list-style-type: none; /*removes the initial bullet points*/
+    margin-right: 40px; /*give space between the side of the browser and the buttons*/
+}
+#header li{
+    display: inline; /*dsiplay the items in a line horizontally*/
+    float: right; /*put the buttons on the right*/
+    font-family: Eurostile, sans-serif; /*font*/
+    color: #f6f6f6; /*font color*/
+    margin: 0,0,0,0;
+    padding-top: 10px;       /*padding for all of the buttons*/
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    font-size: 20px;         /*size of the buttons*/
+    color:#6699cc; /* color of the text of the buttons*/
+}
+#name{
+    vertical-align: middle;
+    top:0; /*starts int he top left corner*/
+    left:0;
+    float: left; /*float it left while the buttons are right*/
+    margin-left: 10px; /*gives some space from the left edge*/
+    padding-top: 5px;   /*padding around the name link*/
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+#header a{
+    color: #6699cc; /*color of the text is white*/
+    line-height: 0px;
+}
+#header li:hover{
+    color: #5e4334; /*while hovering the buttons are this color*/
+}
+#name:hover{
+    color: #5e4334; /*while hovering it changes color*/
+}
+
+
+
+#space {
+    min-width: 1100px; /*not smaller than 1100*/
+    width: 100%; /*across the */
+    left: 0; /*set to left edge*/
+    height: 300px; /*show 500px of the picture*/
+    margin-top: 50px; /*move down 70px from the top*/
+    position: relative;
+    float: left;
+}
+
+
+
+#content {
+    min-width: 1100px;
+    padding-top: 10px;
+    width: 100%;
+    height: 175px;
+    margin-top:0;
+    margin-bottom: 0;
+    background-color: #f6f6f6;
+    float: left;
+    font-family: Eurostile, sans-serif;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+} 
+#text{
+    margin-left:20%;
+    margin-right:20%;
+    text-align: center;
+}
+#text p{
+    margin-left: 10px;
+}
+#button{
+    text-align: center;
+    height:50px;
+    width:45%;
+    margin-top: 25px;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    background-color: #f6f6f6;
+    padding-bottom: 5px;
+}
+#button a{
+    color:#6699cc;
+}
+#buttontext:hover{
+    color:#5e4334;
+}
+#buttontext{
+    padding-top: 15px;
+    text-shadow: 1px 1px gray;
+    font-size:24px;
+    color:#6699cc;
+}
+
+
+/*begin footer*/
+
+#footer{ 
+    min-width: 1100px;
+    opacity: .4;
+    bottom: 0; 
+    left: 0;  
+    width: 100%;
+    height: 80px;
+    background-color: #6699cc;
+    text-align: center;
+    position:absolute;
+    border-top:2px solid black;
+}
+#footer p{
+    font-size: 15px;
+    font-family: Eurostile, sans-serif;
+    padding-top: 15px;
+    color: black;
+}
+#footer a{
+    color: black;
+}
+#footer a:hover{
+    font-weight:bold;
+}

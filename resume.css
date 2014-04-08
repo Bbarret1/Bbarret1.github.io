@@ -1,0 +1,537 @@
+body {
+        margin: 0; /*n*/
+        padding: 0;
+        background-image: url(mountains.jpg);
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        font-family: Eurostile, sans-serif;
+        z-index: 1;
+}
+body a{
+    text-decoration: none;
+}
+
+
+
+/*Begin Top Bar Menu*/
+
+#header{                /*the top bar*/
+    min-width: 900px;   /*don't let this get smaller than 900*/
+    position: fixed;    /*keep the bar at th eto of the page*/
+    top: 0;             /*start top*/
+    left: 0;            /*start left*/
+    width: 100%;        /*make the width from side to side*/
+    z-index: 10;
+    height: 60px;       /*make the hieght just 50px*/
+    background-color: #f6f6f6;     /*background color*/
+    font-size: 25px; /*font size*/
+    font-family: Eurostile, sans-serif; /*font*/
+    color: #6699cc; /*font color*/
+}
+#header ul{
+    list-style-type: none; /*removes the initial bullet points*/
+    margin-right: 40px; /*give space between the side of the browser and the buttons*/
+}
+#header li{
+    display: inline; /*dsiplay the items in a line horizontally*/
+    float: right; /*put the buttons on the right*/
+    font-family: Eurostile, sans-serif; /*font*/
+    color: #f6f6f6; /*font color*/
+    margin: 0,0,0,0;
+    padding-top: 10px;       /*padding for all of the buttons*/
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    font-size: 20px;         /*size of the buttons*/
+    color:#6699cc; /* color of the text of the buttons*/
+}
+#name{
+    vertical-align: middle;
+    top:0; /*starts int he top left corner*/
+    left:0;
+    float: left; /*float it left while the buttons are right*/
+    margin-left: 10px; /*gives some space from the left edge*/
+    padding-top: 5px;   /*padding around the name link*/
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+#header a{
+    color: #6699cc; /*color of the text is white*/
+    line-height: 0px;
+}
+#header li:hover{
+    color: #5e4334; /*while hovering the buttons are this color*/
+}
+#name:hover{
+    color: #5e4334; /*while hovering it changes color*/
+}
+   /*End Top Bar Menu*/
+
+
+
+#space {
+    min-width: 1100px;
+    width: 100%;
+    left: 0;
+    height: 450px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    position: relative;
+    float: left;
+}
+#tableofcontents {
+    min-width: 1100px;
+    width: 100%;
+    left: 0;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #f6f6f6;
+    position: relative;
+    float: left;
+}
+#tableofcontents ul{
+    text-align: center;
+}
+#tableofcontents li{
+    display:inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    color:#6699cc;
+    font-family: Eurostile, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+#tableofcontents li:hover{
+    color: #5e4334;
+}
+.titles {
+    list-style-type: none;
+    margin-left: 9%;
+    padding-bottom: 2px;
+}
+.line {
+    width: 80%;
+    margin-left: 10%;
+    height: 2px;
+    background-color: black;
+}
+.titles span{
+    float: right;
+    margin-right: 7%;
+}
+h4{
+    margin-bottom: 5px;
+}
+
+
+#design1{
+    background-color: #5e4334;
+    height: 100px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:-60px;
+}
+#topcircle{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position: absolute;
+    margin-left: 50px;
+    margin-top:10px;
+    overflow:hidden;
+}
+#design2{
+    background-color: #5e4334;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#bottomcircle{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position:absolute;
+    margin-left: 50px;
+    margin-top:30px;
+    overflow:hidden;
+}
+#design3{
+    background-color: #6699cc;
+    height: 40px;
+    width: 40px;
+    bottom:0;
+    left:0;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#design4{
+    background-color: #6699cc;
+    height: 300px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:40px;
+}
+
+#design12{
+    background-color: #6699cc;
+    height: 87px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:-60px;
+}
+#topcircle2{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position: absolute;
+    margin-left: 50px;
+    margin-top:-3px;
+    overflow:hidden;
+}
+#design22{
+    background-color: #6699cc;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#bottomcircle2{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position:absolute;
+    margin-left: 50px;
+    margin-top:17px;
+    overflow:hidden;
+}
+#design32{
+    background-color: #5e4334;
+    height: 40px;
+    width: 40px;
+    bottom:0;
+    left:0;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#design42{
+    background-color: #5e4334;
+    height: 400px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:27px;
+}
+
+#design13{
+    background-color: #5e4334;
+    height: 90px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:-60px;
+}
+#topcircle3{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position: absolute;
+    margin-left: 50px;
+    margin-top:6px;
+    overflow:hidden;
+}
+#design23{
+    background-color: #5e4334;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#bottomcircle3{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position:absolute;
+    margin-left: 50px;
+    margin-top:26px;
+    overflow:hidden;
+}
+#design33{
+    background-color: #6699cc;
+    height: 40px;
+    width: 40px;
+    bottom:0;
+    left:0;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#design43{
+    background-color: #6699cc;
+    height: 250px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:30px;
+}
+
+#design14{
+    background-color: #6699cc;
+    height: 87px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:-60px;
+}
+#topcircle4{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position: absolute;
+    margin-left: 50px;
+    margin-top:5px;
+    overflow:hidden;
+}
+#design24{
+    background-color: #6699cc;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#bottomcircle4{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position:absolute;
+    margin-left: 50px;
+    margin-top:25px;
+    overflow:hidden;
+}
+#design34{
+    background-color: #5e4334;
+    height: 40px;
+    width: 40px;
+    bottom:0;
+    left:0;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#design44{
+    background-color: #5e4334;
+    height: 340px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:27px;
+}
+
+#design15{
+    background-color: #5e4334;
+    height: 90px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:-60px;
+}
+#topcircle5{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position: absolute;
+    margin-left: 50px;
+    margin-top:3px;
+    overflow:hidden;
+}
+#design25{
+    background-color: #5e4334;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#bottomcircle5{
+    height: 20px;
+    width: 40px;
+    z-index: 4;
+    position:absolute;
+    margin-left: 50px;
+    margin-top:23px;
+    overflow:hidden;
+}
+#design35{
+    background-color: #6699cc;
+    height: 40px;
+    width: 40px;
+    bottom:0;
+    left:0;
+    z-index: 5;
+    border-radius: 100%;
+    position: absolute;
+}
+#design45{
+    background-color: #6699cc;
+    height: 595px;
+    width: 10px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 65px;
+    margin-top:30px;
+}
+
+
+
+#Leadership {
+    overflow:hidden;
+    min-width: 1100px;
+    padding-top: 10px;
+    width: 100%;
+    height: 325px;
+    background-color: #f6f6f6;
+    float: left;
+} 
+#Leadership h2{
+    text-shadow:1px 1px gray;
+    margin-left: 9%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+
+
+
+#Employment {
+    overflow:hidden;
+    min-width: 1100px;
+    padding-top: 10px;
+    width: 100%;
+    height: 410px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #f6f6f6;
+    float: left;
+    font-family: Eurostile, sans-serif;
+} 
+#Employment h2{
+    text-shadow:1px 1px gray;
+    margin-left: 9%;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom:10px;
+}
+
+
+
+
+#Awards {
+    overflow:hidden;
+    min-width: 1100px;
+    padding-top: 0px;
+    width: 100%;
+    height: 260px;
+    margin-top:0;
+    background-color: #f6f6f6;
+    float: left;
+    font-family: Eurostile, sans-serif;
+} 
+#Awards h2{
+    text-shadow:1px 1px gray;
+    margin-left: 9%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+
+
+#Skills {
+    overflow:hidden;
+    min-width: 1100px;
+    padding-top: 0px;
+    width: 100%;
+    height: 340px;
+    margin-top:0;
+    background-color: #f6f6f6;
+    float: left;
+    font-family: Eurostile, sans-serif;
+} 
+#Skills h2{
+    text-shadow:1px 1px gray;
+    margin-left: 9%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+
+#Events {
+    overflow:hidden;
+    min-width: 1100px;
+    padding-top: 0px;
+    width: 100%;
+    height: 625px;
+    margin-top:0;
+    background-color: #f6f6f6;
+    float: left;
+    font-family: Eurostile, sans-serif;
+    border-bottom: 2px solid black;
+} 
+#Events h2{
+    text-shadow:1px 1px gray;
+    margin-left: 9%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+
+
+/*Begin Footer*/
+#footer{ 
+    min-width: 1100px;
+    opacity: .4;
+    bottom: 0; 
+    left: 0;  
+    width: 100%;
+    height: 80px;
+    background-color: #6699cc;
+    clear: both;
+    text-align: center;
+}
+#footer p{
+    font-size: 15px;
+    font-family: Eurostile, sans-serif;
+    padding-top: 15px;
+    color: black;
+}
+#footer a{
+    color: black;
+}
+#footer a:hover{
+    font-weight:bold;
+}
+/* End Footer*/
