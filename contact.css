@@ -1,55 +1,100 @@
+/*---------------------------------------------------------*/
+/*------------------------CSS RESET------------------------*/
+/*---------------------------------------------------------*/
+body{
+    margin:0;
+    padding:0;
+}
+body a{ 
+    text-decoration: none;
+}
+html{ 
+    font-size:100%; 
+}
+h1,h2,h3,h4,h5,h6{
+    font-style: none;
+    font-weight: none;
+    padding:10px;
+    margin:10px;
+}
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+h4{
+    font-size: 2.4rem;
+}
+h5{
+    font-size: 2.0rem;
+}
+h6{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+p, li{
+    font-size: 1rem;
+}
+ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+/*---------------------------------------------------------*/
+/*----------------------END CSS RESET----------------------*/
+/*---------------------------------------------------------*/
+
 body {
-        margin: 0; /*undo the margin and padding initials on the body*/
-        padding: 0;
         background-image: url(lizard.jpg); /*put that background image up in the background*/
         background-attachment:fixed;    /*don't move the background image*/
         background-position: 50% 50%;   /*center the image vertically and horizontally*/
         background-size: cover;
 }
-body a{
-    text-decoration: none;  /*remove th eunderline from any hyperlinks in the body*/
-}
 
 
-
-
+/*---------------------------------------------------------*/
+/*----------------------NAVIGATION BAR---------------------*/
+/*---------------------------------------------------------*/
 #header{                /*the top bar*/
-    min-width: 900px;   /*don't let this get smaller than 900*/
+    min-width: 800px;   /*don't let this get smaller than 900*/
     position: fixed;    /*keep the bar at th eto of the page*/
     top: 0;             /*start top*/
     left: 0;            /*start left*/
     width: 100%;        /*make the width from side to side*/
     z-index: 10;
-    height: 60px;       /*make the hieght just 50px*/
+    height: 70px;       /*make the hieght just 50px*/
     background-color: #f6f6f6;     /*background color*/
     font-size: 25px; /*font size*/
     font-family: Eurostile, sans-serif; /*font*/
     color: #6699cc; /*font color*/
+    transition: all .7s ease;
 }
 #header ul{
     list-style-type: none; /*removes the initial bullet points*/
     margin-right: 40px; /*give space between the side of the browser and the buttons*/
+    margin-top: 15px;
 }
 #header li{
+    transition: all .7s ease;
     display: inline; /*dsiplay the items in a line horizontally*/
     float: right; /*put the buttons on the right*/
     font-family: Eurostile, sans-serif; /*font*/
-    color: #f6f6f6; /*font color*/
-    margin: 0,0,0,0;
-    padding-top: 10px;       /*padding for all of the buttons*/
-    padding-bottom: 10px;
-    padding-left: 10px; 
-    padding-right: 10px;
-    font-size: 20px;         /*size of the buttons*/
+    padding-left: 5px; 
+    padding-right: 5px;
     color:#6699cc; /* color of the text of the buttons*/
 }
 #name{
-    vertical-align: middle;
+    transition: all .7s ease;
     top:0; /*starts int he top left corner*/
     left:0;
     float: left; /*float it left while the buttons are right*/
     margin-left: 10px; /*gives some space from the left edge*/
-    padding-top: 5px;   /*padding around the name link*/
+    margin-top: 20px;
     padding-bottom: 7px;
     padding-left: 5px;
     padding-right: 5px;
@@ -59,11 +104,81 @@ body a{
     line-height: 0px;
 }
 #header li:hover{
+    transition: all .7s ease;
     color: #5e4334; /*while hovering the buttons are this color*/
 }
-#name:hover{
+#hovername:hover #name{
+    transition: all .7s ease;
     color: #5e4334; /*while hovering it changes color*/
 }
+#header:hover{
+    transition: all .7s ease;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#linename {
+    clear:left;
+    margin-left: 150px;
+    background-color:#5e4334;
+    height:4px;
+    width:0px;
+    transition: all .5s ease;
+}
+#hovername:hover #linename{
+    transition: all .5s ease;
+    width:200px;
+    margin-left: 50px;
+}
+#hovername{
+    transition: all .5s ease;
+    top:0; 
+    left:0;
+    float: left; 
+    margin-left: 15px;
+    margin-top: 5px;
+    height:55px;
+    width:300px;
+}
+#linecontact{
+    transition: all .5s ease;
+    background-color: #5e4334;
+    margin-left: 60px;
+    height:4px;
+    width:0px;
+}
+#contact:hover #linecontact{
+    transition: all .5s ease;
+    margin-left: 30px;
+    width: 60px;
+}
+#linehobbies{
+    transition: all .5s ease;
+    background-color: #5e4334;
+    margin-left: 60px;
+    height:4px;
+    width:0px;
+}
+#hobbies:hover #linehobbies{
+    transition: all .5s ease;
+    margin-left: 30px;
+    width: 60px;
+}
+#lineresume{
+    transition: all .5s ease;
+    background-color: #5e4334;
+    margin-left: 60px;
+    height:4px;
+    width:0px;
+}
+#resume:hover #lineresume{
+    transition: all .5s ease;
+    margin-left: 30px;
+    width: 60px;
+}
+
+/*---------------------------------------------------------*/
+/*--------------------END NAVIGATION BAR-------------------*/
+/*---------------------------------------------------------*/
 
 
 
@@ -89,9 +204,7 @@ body a{
     background-color: #f6f6f6;
     float: left;
     font-family: Eurostile, sans-serif;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-} 
+}
 #text{
     margin-left:20%;
     margin-right:20%;
@@ -123,20 +236,21 @@ body a{
     color:#6699cc;
 }
 
-
-/*begin footer*/
-
+/*---------------------------------------------------------*/
+/*-----------------------BEGIN FOOTER----------------------*/
+/*---------------------------------------------------------*/
 #footer{ 
+    transition: all .5s ease;
     min-width: 1100px;
-    opacity: .4;
+    opacity: .6;
     bottom: 0; 
     left: 0;  
     width: 100%;
     height: 80px;
     background-color: #6699cc;
-    text-align: center;
     position:absolute;
-    border-top:2px solid black;
+    clear: both;
+    text-align: center;
 }
 #footer p{
     font-size: 15px;
@@ -147,6 +261,14 @@ body a{
 #footer a{
     color: black;
 }
+#footer:hover{
+    transition: all .5s ease;
+    opacity:.9;
+}
 #footer a:hover{
     font-weight:bold;
 }
+
+/*---------------------------------------------------------*/
+/*------------------------END FOOTER-----------------------*/
+/*---------------------------------------------------------*/

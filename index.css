@@ -36,7 +36,7 @@ h6{
     font-size: 1.3rem;
     font-weight: normal;
 }
-p{
+p, li{
     font-size: 1rem;
 }
 ul
@@ -279,12 +279,13 @@ body {
     margin-top: 20px
     font-family: Eurostile, sans-serif;
 }
-#text h2{
-    margin-left: 10px;
+#text h5{
+    margin-left: 20px;
     text-shadow: 1px 1px gray;
 }
 #text p{
-    margin-left: 10px;
+    margin-left: 30px;
+    text-align: left;
 }
 /*---------------------------------------------------------*/
 /*-------------------END CONTENT SECTION-------------------*/
