@@ -1,0 +1,343 @@
+/*---------------------------------------------------------*/
+/*------------------------CSS RESET------------------------*/
+/*---------------------------------------------------------*/
+body{
+    margin:0;
+    padding:0;
+}
+body a{ 
+    text-decoration: none;
+}
+html{ 
+    font-size:100%; 
+}
+h1,h2,h3,h4,h5,h6{
+    font-style: none;
+    font-weight: none;
+    padding:10px;
+    margin:10px;
+}
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+h4{
+    font-size: 2.4rem;
+}
+h5{
+    font-size: 2.0rem;
+}
+h6{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+p{
+    font-size: 1rem;
+}
+ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+/*---------------------------------------------------------*/
+/*----------------------END CSS RESET----------------------*/
+/*---------------------------------------------------------*/
+
+
+/*---------------------------------------------------------*/
+/*--------------------OvVERALL BACKGROUND-------------------*/
+/*---------------------------------------------------------*/
+body {
+        background-image: url(lake.jpg); /*put that background image up in the background*/
+        background-attachment:fixed;    /*don't move the background image*/
+        background-position: 50% 50%;   /*center the image vertically and horizontally*/
+}
+/*---------------------------------------------------------*/
+/*------------------END OVERALL BACKGROUND-----------------*/
+/*---------------------------------------------------------*/
+
+
+/*---------------------------------------------------------*/
+/*----------------------NAVIGATION BAR---------------------*/
+/*---------------------------------------------------------*/
+#header{                /*the top bar*/
+    min-width: 800px;   /*don't let this get smaller than 900*/
+    position: fixed;    /*keep the bar at th eto of the page*/
+    top: 0;             /*start top*/
+    left: 0;            /*start left*/
+    width: 100%;        /*make the width from side to side*/
+    z-index: 10;
+    height: 70px;       /*make the hieght just 50px*/
+    background-color: #f6f6f6;     /*background color*/
+    font-size: 25px; /*font size*/
+    font-family: Eurostile, sans-serif; /*font*/
+    color: #6699cc; /*font color*/
+    transition: all .7s ease;
+}
+#header ul{
+    list-style-type: none; /*removes the initial bullet points*/
+    margin-right: 40px; /*give space between the side of the browser and the buttons*/
+    margin-top: 15px;
+}
+#header li{
+    transition: all .7s ease;
+    display: inline; /*dsiplay the items in a line horizontally*/
+    float: right; /*put the buttons on the right*/
+    font-family: Eurostile, sans-serif; /*font*/
+    padding-left: 5px; 
+    padding-right: 5px;
+    color:#6699cc; /* color of the text of the buttons*/
+}
+#name{
+    transition: all .7s ease;
+    top:0; /*starts int he top left corner*/
+    left:0;
+    float: left; /*float it left while the buttons are right*/
+    margin-left: 10px; /*gives some space from the left edge*/
+    margin-top: 20px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+#header a{
+    color: #6699cc; /*color of the text is white*/
+    line-height: 0px;
+}
+#header li:hover{
+    transition: all .7s ease;
+    color: #5e4334; /*while hovering the buttons are this color*/
+}
+#hovername:hover #name{
+    transition: all .7s ease;
+    color: #5e4334; /*while hovering it changes color*/
+}
+#header:hover{
+    transition: all .7s ease;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#linename {
+    clear:left;
+    margin-left: 150px;
+    background-color:#5e4334;
+    height:4px;
+    width:0px;
+    transition: all .5s ease;
+}
+#hovername:hover #linename{
+    transition: all .5s ease;
+    width:200px;
+    margin-left: 50px;
+}
+#hovername{
+    transition: all .5s ease;
+    top:0; 
+    left:0;
+    float: left; 
+    margin-left: 15px;
+    margin-top: 5px;
+    height:55px;
+    width:300px;
+}
+#linecontact{
+    transition: all .5s ease;
+    background-color: #5e4334;
+    margin-left: 60px;
+    height:4px;
+    width:0px;
+}
+#contact:hover #linecontact{
+    transition: all .5s ease;
+    margin-left: 30px;
+    width: 60px;
+}
+#linehobbies{
+    transition: all .5s ease;
+    background-color: #5e4334;
+    margin-left: 60px;
+    height:4px;
+    width:0px;
+}
+#hobbies:hover #linehobbies{
+    transition: all .5s ease;
+    margin-left: 30px;
+    width: 60px;
+}
+#lineresume{
+    transition: all .5s ease;
+    background-color: #5e4334;
+    margin-left: 60px;
+    height:4px;
+    width:0px;
+}
+#resume:hover #lineresume{
+    transition: all .5s ease;
+    margin-left: 30px;
+    width: 60px;
+}
+
+/*---------------------------------------------------------*/
+/*--------------------END NAVIGATION BAR-------------------*/
+/*---------------------------------------------------------*/
+
+
+/*---------------------------------------------------------*/
+/*--------------------BEGIN CLEAR SPACE--------------------*/
+/*---------------------------------------------------------*/
+
+#space {
+    min-width: 1100px; /*not smaller than 1100*/
+    width: 100%; /*across the */
+    left: 0; /*set to left edge*/
+    height: 500px; /*show 500px of the picture*/
+    margin-top: 70px; /*move down 70px fromt he top*/
+    position: relative;
+    float: left;
+}
+#quote {
+    vertical-align: middle;
+    opacity:.7;
+    margin-left: 2.5%;
+    height: 90px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: 140px;
+    font-size: 16px;
+    font-family: Eurostile, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #f6f6f6;
+    background-color: #6699cc;
+}
+#quote p{
+    opacity:1;
+    margin-top: 15px;
+    margin-left: 0;
+    font-weight: bold;
+}
+#authorname {
+    font-size: 14px;
+    opacity: 1;
+    font-family: Eurostile, sans-serif;
+    margin-right: 20px;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #f6f6f6;
+}
+/*---------------------------------------------------------*/
+/*---------------------END CLEAR SPACE---------------------*/
+/*---------------------------------------------------------*/
+
+
+/*---------------------------------------------------------*/
+/*-------------------BEGIN CONTENT SECTION-----------------*/
+/*---------------------------------------------------------*/
+#contentbackground {
+    min-width: 1100px;
+    padding-top: 10px;
+    width: 100%;
+    height: 400px;
+    margin-top:0;
+    margin-bottom: 0;
+    background-color: #f6f6f6;
+    float: left;
+    font-family: Eurostile, sans-serif;
+    border-top: 2px solid #5e4334;
+    border-bottom: 2px solid #5e4334;
+} 
+#content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    height:400px;
+    width:900px;
+}
+.slideshow{
+    float: left;
+    height: 400px; 
+    width: 500px;
+}
+.slideshow img{
+    height: 300px;
+    width: 450px;
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    background-color: #6699cc;
+}
+#text{
+    float:left;
+    height:300px;
+    width: 40%;
+    margin-top: 20px
+    font-family: Eurostile, sans-serif;
+}
+#text h2{
+    margin-left: 10px;
+    text-shadow: 1px 1px gray;
+}
+#text p{
+    margin-left: 10px;
+}
+/*---------------------------------------------------------*/
+/*-------------------END CONTENT SECTION-------------------*/
+/*---------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------*/
+/*-----------------------BEGIN FOOTER----------------------*/
+/*---------------------------------------------------------*/
+#footer{ 
+    transition: all .5s ease;
+    min-width: 1100px;
+    opacity: .6;
+    bottom: 0; 
+    left: 0;  
+    width: 100%;
+    height: 80px;
+    background-color: #6699cc;
+    clear: both;
+    text-align: center;
+}
+#footer p{
+    font-size: 15px;
+    font-family: Eurostile, sans-serif;
+    padding-top: 15px;
+    color: black;
+}
+#footer a{
+    color: black;
+}
+#footer:hover{
+    transition: all .5s ease;
+    opacity:.9;
+}
+#footer a:hover{
+    font-weight:bold;
+}
+
+/*---------------------------------------------------------*/
+/*------------------------END FOOTER-----------------------*/
+/*---------------------------------------------------------*/
+
+/*---------------------------------------------------------*/
+/*-------------------SMALLER SCREEN SIZE-------------------*/
+/*---------------------------------------------------------*/
+
+@media only screen and (max-width:490px) {
+
+}
+
+/*---------------------------------------------------------*/
+/*-----------------END SMALLER SCREEN SIZE-----------------*/
+/*---------------------------------------------------------*/
+
+

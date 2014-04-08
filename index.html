@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="index.css"/>
+		<title>Brian Barrett's Homepage</title>
+<!-- jQuery library -->
+<script type="text/javascript" src="jquery2.1.min.js"></script>
+<!-- Cycle plugin -->
+<script type="text/javascript" src="Cycle.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'scrollLeft'
+	});
+});
+</script>
+
+	</head>
+	<body>
+	    	<div id="header">
+	    		<div id="hovername">
+	    			<a href="index.html"><h3 id="name">Brian Barrett</h3><div id="linename"></div></a>
+	    		</div>
+	    		<ul>
+	    			<a href="contact.html"><li id="contact"><h6>Contact</h6><div id="linecontact"></div></li></a>
+	    			<a href="hobbies.html"><li id="hobbies"><h6>Hobbies</h6><div id="linehobbies"></div></li></a>
+	    			<a href="resume.html"><li id="resume"><h6>Resume</h6><div id="lineresume"></div></li></a>
+	    		</ul>
+	    	</div>
+	    	<div id="space">
+	    		<div id="quote">
+	        		<p>"A genuine leader is not a searcher for consensus, but a molder of consensus"</p>
+	        		<p id="authorname"> -Martin Luther King, Jr.</p>
+	        	</div>
+	    	</div>
+	    
+	    	<div id="contentbackground">
+	    		<div id="content">
+	    			<div class="slideshow">
+	    				<img src="http://i.imgur.com/3S1kh2k.jpg" width="300" height="450"/>
+	    				<img src="image1.jpg" width="300" height="450"/>
+	    				<img src="image2.jpg" width="300" height="450"/>
+	    				<img src="image3.jpg" width="300" height="450"/>
+	    			</div>
+	    			<div id="text">
+	    				<h5>Meet Brian</h5>
+	    				<p>Brian is originally from the Maryland, District of Columbia area, but is currently studying Human Development at Binghamton University, in Binghamton, New York. In his third year, he has his eye on a job in the non-profit sector, with the hopes of starting his own company one day. He enjoys coding websites, learning chinese, and exploring the outdoors. If you have any questions or feedback regarding this website Brian would be pleased to hear form you. If anything comes to mind, go ahead and tap the contact icon at the top. Enjoy the rest of your stay at casa a la Brian.</p>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div id="footer">
+	        	<p>
+	        	Copyright 2014 Brian Barrett. All rights reserved.
+				<a href="#">Go to top</a>							
+				</p>
+	    	</div>
+	</body>
+</html>
