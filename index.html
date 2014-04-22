@@ -1,59 +1,113 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="index.css"/>
-		<title>Brian Barrett's Homepage</title>
-<!-- jQuery library -->
-<script type="text/javascript" src="jquery2.1.min.js"></script>
-<!-- Cycle plugin -->
-<script type="text/javascript" src="Cycle.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.slideshow').cycle({
-		fx: 'scrollLeft'
-	});
-});
-</script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
 
-	</head>
-	<body>
-	    	<div id="header">
-	    		<div id="hovername">
-	    			<a href="index.html"><h3 id="name">Brian Barrett</h3><div id="linename"></div></a>
-	    		</div>
-	    		<ul>
-	    			<a href="contact.html"><li id="contact"><h6>Contact</h6><div id="linecontact"></div></li></a>
-	    			<a href="hobbies.html"><li id="hobbies"><h6>Hobbies</h6><div id="linehobbies"></div></li></a>
-	    			<a href="resume.html"><li id="resume"><h6>Resume</h6><div id="lineresume"></div></li></a>
-	    		</ul>
-	    	</div>
-	    	<div id="space">
-	    		<div id="quote">
-	        		<p>"A genuine leader is not a searcher for consensus, but a molder of consensus"</p>
-	        		<p id="authorname"> -Martin Luther King, Jr.</p>
-	        	</div>
-	    	</div>
-	    
-	    	<div id="contentbackground">
-	    		<div id="content">
-	    			<div class="slideshow">
-	    				<img src="http://i.imgur.com/3S1kh2k.jpg" width="300" height="450"/>
-	    				<img src="image1.jpg" width="300" height="450"/>
-	    				<img src="image2.jpg" width="300" height="450"/>
-	    				<img src="image3.jpg" width="300" height="450"/>
-	    			</div>
-	    			<div id="text">
-	    				<h5>Meet Brian</h5>
-	    				<p>Brian is originally from the Maryland, District of Columbia area, but is currently studying Human Development at Binghamton University, in Binghamton, New York. In his third year, he has his eye on a job in the non-profit sector, with the hopes of starting his own company one day. He enjoys coding websites, learning chinese, and exploring the outdoors. If you have any questions or feedback regarding this website Brian would be pleased to hear form you. If anything comes to mind, go ahead and tap the contact icon at the top. Enjoy the rest of your stay at casa a la Brian.</p>
-	    			</div>
-	    		</div>
-	    	</div>
+    <title>Brian Barrett|Home</title>
 
-	    	<div id="footer">
-	        	<p>
-	        	Copyright 2014 Brian Barrett. All rights reserved.
-				<a href="#">Go to top</a>							
-				</p>
-	    	</div>
-	</body>
+    <!--Image to the right of the address-->
+     <link rel="icon" type="image/png" href="images/Regularbb.png"/>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/default.css"/>
+    <!--CSS for Font-->
+    <link type="text/css" rel="stylesheet" href="fonts/junction.css"/>
+
+    <script type="text/javascript" src="scripts/libs/jquery2.1.min.js"></script>
+
+    <!-- (DON"T KNOW WHAT THIS IS...syntax highlighting CSS -->
+    <link rel="stylesheet" href="css/syntax.css"/>
+
+    <!--Files for Word Slider -->
+    <script src="scripts/libs/wordslider.min.js"></script>
+    <script src="scripts/apps/wordslide.js"></script>
+    <link href="css/wordslider.css" rel="stylesheet" />
+
+    <!--Files for Pic Slider-->
+    <script src="scripts/libs/picslider.min.js"></script>
+    <script src="scripts/apps/picslide.js"></script>
+    <link href="css/picslider.css" rel="stylesheet" />
+
+        
+  </head>
+
+    <body>
+      <div id="navbar">
+        <div id="navbar_content">
+          <div id="logo">
+            <a href="/"><img src="images/Invertbb.png"></a>
+          </div>
+          <div id="name_container">
+            <a href="/">
+              <div id="name">
+                <h2>Brian Barrett</h2>
+                <div id="nameline">
+                </div>
+              </div>
+            </a>
+          </div>
+        <div id="button_holder">
+          <a href="blog">
+            <div id="blog">
+              <p>Blog</p>
+              <div id="blogline">
+              </div>
+            </div>
+          </a>
+          <a href="photography">
+            <div id="photo">
+              <p>Photography</p>
+              <div id="photoline">
+              </div>
+            </div>
+          </a>
+          <a href="profile">
+            <div id="profile">
+              <p>Profile</p>
+              <div id="profileline">
+              </div>
+            </div>
+          </a>
+        </div>
+        </div>
+      </div>
+      <div id="navbar_background">
+      </div>
+
+      <div class="site">
+
+    <img class="picture_background" src="images/Flower.jpg">
+
+<ul class="inspiration">
+	<li><h2>Everyday I Strive to Be A:</h2></li>
+  	<li><h2>Pragmatist</h2></li>
+ 	<li><h2>Optimist</h2></li>
+	<li><h2>Self-Starter</h2></li>
+	<li><h2>and one more</h2></li>
+	<li><h2>What Do You Strive For?</h2></li>
+</ul>
+
+
+      </div>
+
+      <div id="footer">
+        <div id="footer_content">
+          <div id="footer_text">
+          <p>&copy; Copyright Brian Barrett 2014 All Rights Reserved.</p>
+          </div>
+          <div id="social_media">
+            <a href="mailto:bbarret1@binghamton.edu"><img class="social" src="images/Email.png"></a>
+            <a href="http://www.twitter.com/BrianBarrett77"><img class="social" src="images/Twitter.png"></a>
+            <a href="http://www.pinterest.com/bbarret1"><img class="social" src="images/Pintrest.png"></a>
+            <a href="http://www.linkedin.com/pub/brian-barrett/59/722/755"><img class="social" src="images/Linkedin.png"></a>
+            <a href="http://www.github.com/Bbarret1"><img class="social" src="images/Github.png"></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer_background">
+      </div>
+    </body>
 </html>

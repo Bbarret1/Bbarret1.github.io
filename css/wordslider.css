@@ -1,0 +1,128 @@
+/**
+ * wordSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://wordslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of wordCreative, LTD
+ * http://wordcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.word-wrapper {
+	position: relative;
+	color: white;
+}
+.word-wrapper h2{
+	font-size: 6rem;
+	margin-top: 100px;
+	margin-bottom:10px; 
+}
+
+.word-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+
+
+
+/* PAGER */
+
+.word-wrapper .word-pager {
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.word-wrapper .word-pager .word-pager-item,
+.word-wrapper .word-controls-auto .word-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.word-wrapper .word-pager.word-default-pager a {
+	text-indent: -9999px;
+	display: block;
+	width: 5px;
+	height: 5px;
+	margin-right: 2px;
+	opacity:.1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.word-wrapper .word-controls-auto {
+	text-align: center;
+}
+
+.word-wrapper .word-controls-auto .word-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.word-wrapper .word-controls-auto .word-start:hover,
+.word-wrapper .word-controls-auto .word-start.active {
+	background-position: -86px 0;
+}
+
+.word-wrapper .word-controls-auto .word-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.word-wrapper .word-controls-auto .word-stop:hover,
+.word-wrapper .word-controls-auto .word-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.word-wrapper .word-controls.word-has-controls-auto.word-has-pager .word-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.word-wrapper .word-controls.word-has-controls-auto.word-has-pager .word-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.word-wrapper .word-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.word-wrapper .word-caption span {
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
