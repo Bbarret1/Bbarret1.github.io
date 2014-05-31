@@ -1,311 +1,408 @@
-/*-------------------------------------------------------------------------------------------*/
-/*--------------------------------------Navigation Bar---------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-#navbar{
-    z-index: 5;
-    top: 0;
-    left: 0;
-    width: 100%;   
-    position: fixed;
-    height: 100px;
-}
-#navbar_background{
-    z-index: 2;
+/*----------------------------------------*\
+ | | | | | | | Navbar Divison | | | | | | |
+\*----------------------------------------*/
+  #top_bar{
+    position:fixed;
+    z-index:50;
+    height:50px;
     width:100%;
-    height:100px;
-    background-color: #f3f3f3;
-    opacity:.05;
-}
-#navbar_content{
-    top:0;
-    width: 800px;
-    height: 50px;
+    background-color: #f8f8f8;
+  }
+  #top_bar_content{
+    width:800px;
+    height:50px;
     margin-right: auto;
     margin-left: auto;
-}
-#name_container{
-    float: left;
-    height:100px;
-    width: 240px;
-}
-#button_holder{
-    float: right;
-    height:100px;
-    width: 300px;
-}
-/*--------------------Name And Logo------------------------*/
-#logo{
+  }
+  #top_bar_left{
     float:left;
-    margin-top: 10px;
+    width:325px;
+    height:50px;
+  }
+  #top_bar_left h4{
+    color:#609170;
+    float:left;
+    margin-top: 8px;
+    padding-top: 4px;
+  }
+  #top_bar_left:hover h4{
+    color: #ff9c36;
+  }
+  #top_bar_left img{
+    height:50px;
+    width:50px;
+    float:left;
+  }
+  #top_bar_right{
+    float:right;
+    width:475px;
+    height:50px;
+    margin-top: 5px;
+  }
+  #buttons{
+    list-style-type: none;
+  }
+  #buttons li{
+    display: inline;
+    float:right;
+    padding-top: 13px;
+    padding-bottom:10px;
     padding-right: 10px;
-    width:80px;
-    height:80px;
-}
-#logo img{
-    height:80px;
-    width:80px;
-}
-#name{
-    color: #f6f6f6;
-    height:40px;
-    width:260px;
-    margin-top: 35px;
-}
-#nameline{
-    margin-left: 125px;
-    margin-top: -3px;
-    background-color: #a0dcab;
-    height: 2px;
-    width: 0px;
-    transition: all .5s ease;
-    -webkit-transition: all .7s ease;
-}
-#name:hover #nameline{
-    width: 145px;
-    margin-left: 45px;
-    transition: all .5s ease;
-    -webkit-transition: all .7s ease;
-}
-/*-------------------------Buttons To Other Pages-------------------------------*/
-#profile{
-    float: right;
-    color:#f6f6f6;
-    margin-top: 40px;
-    padding-top: 10px;
-    height:25px;
-    width:50px;
+    padding-left: 10px;
+  }
+  #buttons li:hover{
+    color: #ff9c36;
+  }
+  #buttons a{
+    color: #609170;
+  }
+
+
+
+/*----------------------------------------*\
+ | | | | | | | Main Site Tag | | | | | | |
+\*----------------------------------------*/
+  .site {
     text-align: center;
-    font-weight: bold;
-}
-#profileline{
-    background-color: #a0dcab;
-    margin-left: 25px;
-    height:1px;
-    width:0px;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-}
-#profile:hover #profileline{
-    margin-left: 5px;
-    width: 40px;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-}
-#photo{
-    float: right;
-    color:#f6f6f6;
-    margin-top: 40px;
-    padding-top: 10px;
-    height:25px;
-    width:150px;
-    text-align: center;
-    font-weight: bold;
-}
-#photoline{
-    background-color: #a0dcab;
-    margin-left: 75px;
-    height:1px;
-    width:0px;
-    transition: all .5s ease;
-    -webkit-transition: all .7s ease;
-}
-#photo:hover #photoline{
-    margin-left: 35px;
-    width: 80px;
-    transition: all .5s ease;
-    -webkit-transition: all .7s ease;
-}
-#blog{
-    float: right;
-    color:#f6f6f6; 
-    margin-top: 40px;
-    padding-top: 10px;
-    height:25px;
-    width:50px;
-    text-align: center;
-    font-weight: bold;
-}
-#blogline{
-    background-color: #a0dcab;
-    margin-left: 25px;
-    height:1px;
-    width:0px;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-}
-#blog:hover #blogline{
-    margin-left: 15px;
-    width: 20px;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-}
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------END Navigation Bar------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------Miscellaneous Tags------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-----------------------------------END Miscellaneous Tags----------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------END NAVIGATION BAR------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------END NAVIGATION BAR------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------END NAVIGATION BAR------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------END NAVIGATION BAR------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------END NAVIGATION BAR------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------END NAVIGATION BAR------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
+    width:100%;
+    height:100%;
+    padding-top: 50px;
+  }
+  #breaking_line{
+    z-index: 100;
+    float:left;
+    height:10px;
+    width:100%;
+    background-color: #609170;
+  }
 
 
+/*----------------------------------------*\
+ | | | | | | | | About Page | | | | | | |
+\*----------------------------------------*/
+  #profile_section{
+    background-image: url(/images/Background/Profile.jpg);
+    float:left;
+    height:400px;
+    width:100%;
+    background-position: 50% 60%;
+    background-size: cover;
+    background-position: center;
+  }
+  #profile_content{
+    height:100px;
+    width:800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #profile_text{
+    text-align: left;
+    float:left;
+    height:100px;
+    width:400px;
+    margin-top: 150px;
+  }
+  #profile_text h4{
+    margin-bottom: 15px;
+    font-family: Junctionbold;
+  }
+  #profile_text h6{
+    margin-bottom: 20px;
+  }
+  #about_me_section{
+    float:left;
+    height:400px;
+    width:100%;
+    background-color: #f8f8f8;
+  }
+  #about_me_text{
+    margin-top: 30px;
+    width:500px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+  #about_me_text h4{
+    margin-left: 20px; 
+  }
+  #about_me_text p{
+    margin-top: 20px; 
+  }
+  #resume_section{
+    float:left;
+    height:30px;
+    width:100%;
+    color:#f8f8f8;
+    background-color: #3f3f3f;
+  }
+  #resume_section h6{
+    font-size: 16px;
+    margin-top: 10px;
+  }
 
-/*****************************************************************************/
-/*
-/* Content
-/*
-/*****************************************************************************/
-.picture_background{
-  z-index: 0;
-  position: fixed;
-  top:0;
-  left:0;
-  margin-left:-200px; 
-  margin-top:-200px;
-  width: 1887px; 
-  height: 1250px;
-  overflow: hidden
-}
-/*****************************************************************************/
-/*
-/* End Content
-/*
-/*****************************************************************************/
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+/*----------------------------------------*\
+ | | | | | | | | Projects Page | | | | | | |
+\*----------------------------------------*/
+  #projects{
+    z-index: 100;
+    float:left;
+    height:800px;
+    width:100%;
+    padding-top: 50px;
+    background-color: #f8f8f8;
+  }
+  #projects h2{
+    color: #609170;
+    margin-top: 50px;
+  }
+
+/*----------------------------------------*\
+ | | | | | | | Photography Page | | | | | |
+\*----------------------------------------*/
+  #photo_section_1{
+    float:left;
+    height:340px;
+    width:100%;
+    padding-top: 50px;
+    background-color: #f8f8f8;
+  }
+  #photo_content_1{
+    width:900px;
+    height:300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #photo_content_1 h3{
+    margin-top: 100px;
+    color: #609170;
+    float:right;
+  }
+  #photo_content_1 h6{
+    text-align: right;
+    margin-top: 10px;
+    color: #609170;
+    float:right;
+  }
+  #nature_flat{
+    float:left;
+    height:300px;
+    width:310px;
+  }
+  .photography{
+  position: relative;
+  width: 400px; 
+  height: auto;
+  }
+  #photo_section{
+    z-index: 100;
+    float:left;
+    width:100%;
+    background-color: #f8f8f8;
+  }
+  @media screen and (max-width:800px){
+      #photo_section{
+      height:1900px;
+      }
+  }
+  @media screen and (min-width:810px){
+    @media screen and (max-width:1210px){
+      #photo_section{
+      height:1090px;
+      }
+    }
+  }
+  @media screen and (min-width:1210px){
+    @media screen and (max-width:1610px){
+      #photo_section{
+      height:820px;
+      }
+    }
+  }
+  @media screen and (min-width:1610px){
+      #photo_section{
+      height:550px;
+      }
+  }
+
+/*----------------------------------------*\
+ | | | | | | | | Blog Page | | | | | | | |
+\*----------------------------------------*/
+  #blog_site{
+    margin-top: 0px;
+    font-family: Fanwooditalic, Eurostile, sans-serif;
+    position:relative;
+    height: 1000px;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+  #blog_header{
+    position:relative;
+    float:left;
+    height:300px;
+    width:100%;
+  }
+  #blog_header_content{
+    margin-left: auto;
+    margin-right: auto;
+    height:75px;
+    width:480px;
+  }
+  #glasses_flat{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    height:200px;
+    width:200px;
+  }
+  #blog_title{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    color: #3f3f3f;
+  }
+  #blog_title span{
+    color: #744aa3;
+  }
+
+  #post_list{
+    position:relative;
+    float:left;
+    width:100%;
+    height:600px;
+  }
+  .posts {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+  }
+  .posts li {
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 5px;
+  }
+  #blog_page_date{
+    font-size: 1.2rem;
+  }
+
+
+
+
+
+
+
+
+
+.blog_post_title{
+  font-size: 1.2rem;
+  color:#3f3f3f;
 }
 
-.posts li {
-  line-height: 1.75em;
-}
+
+
+
+/*********************List of Posts on the Blog Home*************************/
+
 
 .posts span {
-  color: #f6f6f6;
+  color: #3f3f3f;
   font-size: 80%;
 }
 .posts a{
-  color: #f6f6f6;
+  color: #744aa3;
 }
-.posts a:hover{
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------------Begin Post Pages-------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#post_window{
+  position:fixed;
+  height: -moz-calc(100% - 277px);
+  height: -webkit-calc(100% - 277px);
+  height: -o-calc(100% - 277px);
+  height: calc(100% - 277px);
+  width:800px;
+  overflow: scroll;
+}
+#post_top{
+  z-index: 2;
+  width:100%;
+  height:80px;
+}
+#post_all{
+  position:fixed;
+  font-family: Fanwooditalic, Eurostile, sans-serif;
+}
+
+#blog_home_button{
   color: #a0dcab;
-}
-
-
-
-/*****************************************************************************/
-/*
-/* Blog Front Page
-/*
-/*****************************************************************************/
-
-#title{
-  margin-bottom: 10px;
-  color: #f3f3f3;;
-}
-
-
-/*****************************************************************************/
-/*
-/* All Content entered into Default
-/*
-/*****************************************************************************/
-
-.site {
-  text-align: center;
-  width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
-}
-
-
-
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-#bloghome{
-  color: #f3f3f3;
   padding: 5px;
   float:left;
 }
-#bloghome:hover{
+#blog_home_button:hover{
   color: #c9a0dc;
 }
-#posttitle{
+#post_title{
   color: #a0dcab;
   margin-bottom: 5px;
 }
-#postdate{
+#post_date{
+  font-family: Fanwooditalic, Eurostile, sans-serif;
   margin-bottom: 10px;
   color:#f3f3f3;
   float: right;
 }
 .post{
+  font-family: Fanwooditalic, Eurostile, sans-serif;
   color: #f3f3f3;
   width:800px;
 }
-#opening{
+#post_opening{
   float:left;
   width:800px;
   margin-bottom: 10px;
 }
-#opening p{
+#post_opening p{
   text-align:left;
 }
-#sig{
+#post_sig{
   width: 800px;
+  height:100px;
   float:left;
 }
-#sig p{
+#post_sig p{
   text-align: right;
   margin-bottom: 3px;
 }
 .post p{
+  font-size: 1.3rem;
   text-align: center;
   margin-bottom: 20px;
-  line-height: 130%;
+  line-height: 110%;
 }
-#blog_content p{
+#post_content img{
+  height: 331px;
+  width: 500px;
+  border: 2px black solid;
+}
+#post_content p{
   text-align: justify;
 }
-#blog_content a{
+#post_content a{
   color:#a0dcab;
 }
-#blog_space{
+#post_content a:hover{
+  color:#c9a0dc;
+}
+#post_space{
   width: 800px;
   height: 20px;
 }
-#blog_image{
-
+#post_image{
+  height:331px;
+  width:500px;
 }
 #post_date_and_home{
   width:800px;
@@ -313,32 +410,31 @@
 }
 
 /*-------------------------------------------------------------------------------------------*/
-/*---------------------------------------BEGIN FOOTER----------------------------------------*/
+/*---------------------------------------End Post Pages--------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------*\
+ | | | | | Universal Footer Divison | | | |
+\*----------------------------------------*/
 #footer{ 
   z-index: 1;
   bottom: 0; 
   left: 0;  
-  position: fixed;
+  clear:both;
+  position: relative;
   width: 100%;
   height: 50px;
   text-align: center;
+  margin-top: -50px;
+  background-color: #3f3f3f;
 }
 #footer_content{
   width:600px;
   height:50px;
   margin-left: auto;
   margin-right: auto;
-  color: #f6f6f6;
-}
-#footer_background{
-  bottom: 0; 
-  left: 0;  
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  background-color: #f3f3f3;
-  opacity: .05;
+  color: #f8f8f8;
 }
 #footer_text{
   margin-top: 20px;
@@ -359,6 +455,20 @@
   opacity:.5;
 }
 
-/*-------------------------------------------------------------------------------------------*/
-/*-----------------------------------------END FOOTER----------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
+/*----------------------------------------*\
+ | | | | | | | Color's Used | | | | | | | |
+\*----------------------------------------*/
+
+f8f8f8=Off White
+8bd1a1=Light Green
+78b58b=Green
+609170=Dark Green
+3f3f3f=Dark Grey
+484848=Light Grey
+orange=ff9c36
+light green=43d995
+
+
+
+744aa3 = purple
+

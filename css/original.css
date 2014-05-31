@@ -1,0 +1,530 @@
+/*----------------------------------------*\
+ | | | | | Main Navigation Header | | | | |
+\*----------------------------------------*/
+  #first_page{
+    z-index: 100;
+    position:relative;
+  }
+/* Name and Logo */
+  #header{
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;   
+    position: relative;
+    float:left;
+    height: 275px;
+    background-color: #f8f8f8; 
+  }
+  #header a{
+    color: #609170;
+  }
+  #logo_and_name{
+    margin-left: auto;
+    margin-right: auto;
+    width:450px;
+    height:180px;
+  }
+  #logo{
+    float:left;
+    margin-top: 15px;
+    margin-left: 10px;
+    width:150px;
+    height:150px;
+  }
+  #logo img{
+    height:150px;
+    width:150px;
+  }
+  #first_name{
+    margin-top: 25px;
+    margin-right: 70px;
+    float:right;
+  }
+  #last_name{
+    float:right;
+  }
+  #header h1{
+    font-size: 75px;
+  }
+
+  /* Individual Buttons */
+  #button_section{ /*used to manipulate all of the buttons*/
+    list-style-type: none;
+    width:650px;
+    height:50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  #button_section li{ /* used to manipulate all of them each individually*/
+    transition: all .7s ease;
+    display: inline;
+    color:#609170;
+  }
+  #button_section h5{
+    font-size: 30px;
+  }
+  #blog{
+    float:right;
+    margin-right: 10px;
+    margin-left:50px;
+    margin-top: 12.5px;
+    height:25px;
+    width:65px;
+  }
+  #blog_line{
+    background-color: #ff9c36;
+    height:1px;
+    width:0px;
+    margin-left: 30px;
+    transition: all .8s ease;
+  }
+  #blog:hover #blog_line{
+    width: 55px;
+    margin-left: 5px;
+    transition: all .8s ease;
+  }
+  #photo{
+    float:right;
+    margin-left: 60px;
+    margin-top: 12.5px;
+    height:25px;
+    width:193px;
+  }
+  #photo_line{
+    background-color:#ff9c36;
+    margin-left: 85px;
+    height:1px;
+    width:0px;
+    transition: all .8s ease;
+  }
+  #photo:hover #photo_line{
+    margin-left: 15px;
+    width: 160px;
+    transition: all .8s ease;
+  }
+  #projects{
+    float:right;
+    margin-top: 12.5px;
+    margin-left: 100px;
+    height:25px;
+    width:120px;
+  }
+  #projects_line{
+    background-color: #ff9c36;
+    margin-left: 55px;
+    height:1px;
+    width:0px;
+    transition: all .8s ease;
+  }
+  #projects:hover #projects_line{
+    margin-left: 5px;
+    width: 110px;
+    transition: all .8s ease;
+  }
+  #about_me{
+    float:right;
+    margin-left: 5px;
+    margin-top: 12.5px;
+    height:25px;
+    width:45px;
+  }
+  #about_me_line{
+    background-color: #ff9c36;
+    margin-left: 45px;
+    height:1px;
+    width:0px;
+    transition: all .8s ease;
+  }
+  #about_me:hover #about_me_line{
+    margin-left: 5px;
+    width:80px;
+    transition: all .8s ease;
+  }
+  #block_section{
+    z-index: 100;
+    position:relative;
+    float:left;
+    width:100%;
+    height:30px;
+  }
+  #first_block{
+    float:left;
+    height:30px;
+    width:6.25%;
+    background-color: #3f3f3f;
+  }
+  .block{
+    float:left;
+    margin-left: 6.25%;
+    height:30px;
+    width:6.25%;
+    background-color: #3f3f3f;
+  }
+
+/*----------------------------------------*\
+ | | | | | | | Line Division | | | | | | | 
+\*----------------------------------------*/
+  #breaking_line{
+    z-index: 100;
+    float:left;
+    height:10px;
+    width:100%;
+    background-color: #609170;
+  }
+
+/*----------------------------------------*\
+ | | | | | | Welcome Divison | | | | | | |
+\*----------------------------------------*/
+  #welcome_section{
+    z-index: 100;
+    float:left;
+    height:75px;
+    width:100%;
+    background-color: #3f3f3f;
+  }
+  #welcome_content{
+    z-index: 100;
+    clear:left;
+    position:relative;
+    height:50px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  #welcome_content h3{
+    padding-top: 20px;
+    color: #609170;
+  }
+/*----------------------------------------*\
+ | | | | | | Contact Divison | | | | | | |
+\*----------------------------------------*/
+  #contact_section{
+    z-index: 100;
+    float:left;
+    height:125px;
+    width:100%;
+    margin-top: 400px;
+    background-color: #3f3f3f;
+  }
+  #contact_content{
+    z-index: 100;
+    clear:left;
+    position:relative;
+    height:50px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  #contact_content h6{
+    padding-top: 20px;
+    color: #ff9c36;
+  }
+  #social_media{
+    z-index: 100;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    height:50px;
+    width:267px;
+  }
+  .social{
+    height:50px;
+    width:50px;
+  }
+  .social:hover{
+    opacity:.5;
+  }
+
+/*----------------------------------------*\
+ | | | | | | | Blurb Sections | | | | | | |
+\*----------------------------------------*/
+  .section h2{
+    color: #609170;
+    font-size: 55px;
+  }
+  .section p{
+    color: #609170;
+    margin-top: 35px;
+    padding-top: 5px;
+  }
+  .center_section{
+    margin-top: 100px;
+    height:150px;
+    width:900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #peopleflat{
+    height:200px;
+    width:232px;
+  }
+  #codeflat{
+    height:200px;
+    width:220px;
+  }
+  #photographyflat{
+    height:200px;
+    width:200px;
+  }
+  #blogflat{
+    height:200px;
+    width:178px;
+  }
+  .flat_left{
+    float:left;
+  }
+  .text_right{
+    text-align: left;
+    margin-left: 30px;
+    float:left;
+  }
+  .flat_right{
+    float:right;
+  }
+  .text_left{
+    margin-right: 30px;
+    text-align: right;
+    float:right;
+  }
+  .link:hover{
+    color:#ff9c36;
+
+  }
+  #people_section{
+    z-index: 100;
+    float:left;
+    height:400px;
+    width:100%;
+    margin-top: 400px;
+    background-color: #f8f8f8;
+  }
+  #code_section{
+    z-index: 100;
+    float:left;
+    height:400px;
+    width:100%;
+    margin-top: 400px;
+    background-color: #f8f8f8;
+  }
+  #nature_section{
+    z-index: 100;
+    position:relative;
+    float:left;
+    height:400px;
+    width:100%;
+    margin-top: 400px;
+    background-color: #f8f8f8;
+  }
+  #blog_section{
+    z-index: 100;
+    position:relative;
+    float:left;
+    height:400px;
+    width:100%;
+    margin-top: 400px;
+    background-color: #f8f8f8;
+  }
+/*----------------------------------------*\
+ | | | | | | | Picture Section | | | | | | |
+\*----------------------------------------*/
+  #skrollr_pictures{
+    width:100%;
+    height:3330px;
+    z-index: -50;
+    position: relative;
+  }
+  #img_window{
+    z-index: -500;
+    float:left;
+    position:fixed;
+    height:700px;
+    width:100%;
+    overflow: hidden;
+  }
+  #img_window_2{
+    z-index: -501;
+    float:left;
+    position:fixed;
+    height:700px;
+    width:100%;
+    overflow: hidden;
+  }
+  #img_window_3{
+    z-index: -502;
+    float:left;
+    position:fixed;
+    height:700px;
+    width:100%;
+    overflow: hidden;
+  }
+  #img_window_4{
+    z-index: -503;
+    float:left;
+    position:fixed;
+    height:700px;
+    width:100%;
+    overflow: hidden;
+  }
+  #img_window_5{
+    z-index: -504;
+    float:left;
+    position:fixed;
+    height:700px;
+    width:100%;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width:1200px){
+    #picture_1{
+    height:auto;
+    min-width: 100%;
+    width:100%;
+  }
+    #picture_2{
+    height:auto;
+    min-width: 100%;
+    width:100%;
+  }
+  #picture_3{
+    height:auto;
+    min-width: 100%;
+    width:100%;
+  }
+  #picture_4{
+    height:auto;
+    min-width:100%;
+    width:100%;
+  }
+  #picture_5{
+    height:auto;
+    min-width:100%;
+    width:100%;
+  }
+  }
+  @media screen and (max-width:1200px){
+    #picture_1{
+    height:700px;
+    min-width:100%;
+    width:auto;
+  }
+    #picture_2{
+    height:700px;
+    min-width:100%;
+    width:auto;
+  }
+  #picture_3{
+    height:700px;
+    min-width:100%;
+    width:auto;
+  }
+  #picture_4{
+    height:700px;
+    min-width:100%;
+    width:auto;
+  }
+  #picture_5{
+    height:700px;
+    min-width:100%;
+    width:auto;
+  }
+  }
+
+/*----------------------------------------*\
+ | | | | | | | Navbar Divison | | | | | | |
+\*----------------------------------------*/
+#skrollr_header{
+    width:100%;
+    height:50px;
+    top:0;
+    left:0;
+    position: relative;
+  }
+  #top_bar{
+    top:0;
+    left:0;
+    position:fixed;
+    z-index:50;
+    height:50px;
+    width:100%;
+    background-color: #f8f8f8;
+  }
+  #top_bar_content{
+    width:800px;
+    height:50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #top_bar_left{
+    float:left;
+    width:325px;
+    height:50px;
+  }
+  #top_bar_left h4{
+    color:#609170;
+    float:left;
+    margin-top: 8px;
+    padding-top: 4px;
+  }
+  #top_bar_left:hover h4{
+    color: #ff9c36;
+  }
+  #top_bar_left img{
+    height:50px;
+    width:50px;
+    float:left;
+  }
+  #top_bar_right{
+    float:right;
+    width:475px;
+    height:50px;
+    margin-top: 5px;
+  }
+  #buttons{
+    list-style-type: none;
+  }
+  #buttons li{
+    display: inline;
+    float:right;
+    padding-top: 13px;
+    padding-bottom:10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  #buttons li:hover{
+    color: #ff9c36;
+  }
+  #buttons a{
+    color: #609170;
+  }
+/*----------------------------------------*\
+ | | | | | | | Footer Divison | | | | | | |
+\*----------------------------------------*/
+  #footer{ 
+    z-index: 100;
+    float:left;
+    height:50px;
+    width:100%;
+    text-align: center;
+    background-color: #484848;
+  }
+  #footer_content{
+    width:600px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f8f8f8;
+  }
+  #footer_text{
+    margin-top: 20px;
+    float:left;
+    margin-left: 30px
+
+  }
+  #footer_text p{
+    margin-top: 2px;
+    font-size: .75rem;
+  }

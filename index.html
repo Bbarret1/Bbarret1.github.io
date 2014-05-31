@@ -1,4 +1,4 @@
-/<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,105 +7,230 @@
 
     <title>Brian Barrett|Home</title>
 
-    <!--Image to the right of the address-->
+    <!--Image to the left of the address-->
      <link rel="icon" type="image/png" href="images/RegularBB.png"/>
     <!-- CSS Reset -->
     <link rel="stylesheet" href="css/reset.css"/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/default.css"/>
+    <link rel="stylesheet" href="css/original.css"/>
     <!--CSS for Font-->
-    <link type="text/css" rel="stylesheet" href="fonts/junction.css"/>
-
-    <script type="text/javascript" src="scripts/libs/jquery2.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="fonts/Junction/Junction.css"/>
+    <link type="text/css" rel="stylesheet" href="fonts/Fanwood/Fanwood.css"/>
 
     <!-- (DON"T KNOW WHAT THIS IS...syntax highlighting CSS -->
     <link rel="stylesheet" href="css/syntax.css"/>
 
-    <!--Files for Word Slider -->
-    <script src="scripts/libs/wordslider.min.js"></script>
-    <script src="scripts/apps/wordslide.js"></script>
-    <link href="css/wordslider.css" rel="stylesheet" />
+    <script type="text/javascript" src="scripts/libs/jquery2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/libs/skrollr.js"></script>
 
-    <!--Files for Pic Slider-->
-    <script src="scripts/libs/picslider.min.js"></script>
-    <script src="scripts/apps/picslide.js"></script>
-    <link href="css/picslider.css" rel="stylesheet" />
   </head>
 
-    <body>
-      <div id="navbar">
-        <div id="navbar_content">
-          <div id="logo">
-            <a href="/"><img src="images/InvertBB.png"></a>
-          </div>
-          <div id="name_container">
-            <a href="/">
-              <div id="name">
-                <h2>Brian Barrett</h2>
-                <div id="nameline">
+  <body>
+      <div id="first_page">
+        <div id="header">
+        	<div id="logo_and_name">
+        		<a href="/">
+        		<div id="logo">
+            		<img src="images/InvertBB.png">
+          	</div>
+          	<div id="first_name">
+          		<h1>Brian</h1>
+          	</div>
+          	<div id="first_name_line">
+          	</div>
+          	<div id="last_name">
+          		<h1>Barrett</h1>
+          	</div>
+          	<div id="last_name_line">
+              </div>
+          	</a>
+        	</div>
+      		<ul id="button_section">
+      			<a href="blog">
+      				<li id="blog">
+      					<h5>Blog</h5>
+      					<div id="blog_line">
+      					</div>
+      				</li>
+      			</a>
+      			<a href="photography">
+      				<li id="photo">
+      					<h5>Photography</h5>
+      					<div id="photo_line">
+      					</div>
+      				</li>
+      			</a>
+            <a href="projects">
+              <li id="projects">
+                <h5>Projects</h5>
+                <div id="projects_line">
                 </div>
-              </div>
+              </li>
             </a>
+      			<a href="about">
+      				<li id="about_me">
+      					<h5>About</h5>
+      					<div id="about_me_line">
+      					</div>
+      				</li>
+      			</a>
+        	</ul>
+        </div>
+
+        <div id="breaking_line">
+        </div>
+
+        <div id="welcome_section">
+          <div id="welcome_content">
+        		<h3>Welcome!</h3>
           </div>
-        <div id="button_holder">
-          <a href="blog">
-            <div id="blog">
-              <p>Blog</p>
-              <div id="blogline">
-              </div>
-            </div>
-          </a>
-          <a href="photography">
-            <div id="photo">
-              <p>Photography</p>
-              <div id="photoline">
-              </div>
-            </div>
-          </a>
-          <a href="profile">
-            <div id="profile">
-              <p>Profile</p>
-              <div id="profileline">
-              </div>
-            </div>
-          </a>
         </div>
+
+        <div id="block_section">
+          <div class="first_block">
+          </div>
+          <div class="block">
+          </div>
+          <div class="block">
+          </div>
+          <div class="block">
+          </div>
+          <div class="block">
+          </div>
+          <div class="block">
+          </div>
+          <div class="block">
+          </div>
+          <div class="block">
+          </div>
+          <div class="block">
+          </div>
         </div>
-      </div>
-      <div id="navbar_background">
-      </div>
 
-      <div class="site">
-
-    <img class="picture_background" src="images/Flower.jpg"/>
-
-<ul class="inspiration">
-	<li><h2>Everyday I Strive to Be A:</h2></li>
-  	<li><h2>Pragmatist</h2></li>
- 	<li><h2>Optimist</h2></li>
-	<li><h2>Self-Starter</h2></li>
-	<li><h2>Helper</h2></li>
-	<li><h2>What Do You Strive For?</h2></li>
-</ul>
-
-
-      </div>
-
-      <div id="footer">
-        <div id="footer_content">
-          <div id="footer_text">
-          <p>&copy; Copyright Brian Barrett 2014 All Rights Reserved.</p>
+        <div id="people_section" class="section">
+          <div class="center_section">
+            <img class="flat_left" id="peopleflat" src="images/Flat_graphics/Peopleflat.png"/>
+            <div class="text_right">
+              <h2>I Love People</h2>
+              <p> I really enjoy working and collaborating with<br>people whose end goal is helping those in need.</p>
+              <a href="about_me"><p class="link">View My Bio</p></a>
+            </div>
+          </div>
+        </div>
+        <div id="code_section" class="section">
+          <div class="center_section">
+            <img class="flat_right" id="codeflat" src="images/Flat_graphics/Codeflat.png"/>
+            <div class="text_left">
+              <h2>I'm Addicted To Coding</h2>
+              <p>Currently I know CSS3, HTML5, and Javascript,<br>and I am learning more all the time.</p>
+              <a href="projects"><p class="link">View My Projects</p></a>
+            </div>
+          </div>
+        </div>
+        <div id="nature_section" class="section">
+          <div class="center_section">
+            <img class="flat_left" id="photographyflat" src="images/Flat_graphics/Photographyflat.png"/>
+            <div class="text_right">
+              <h2>I Enjoy Nature</h2>
+              <p>I love to take pictures of it, experience it, <br>and I try to do everything I can to save it.</p>
+              <a href="photography"><p class="link">View My Photography</p></a>
+            </div>
+          </div>
+        </div>
+        <div id="blog_section" class="section">
+          <div class="center_section">
+            <img class="flat_right" id="blogflat" src="images/Flat_graphics/Blogflat.png"/>
+            <div class="text_left">
+              <h2>I Never Stop Thinking</h2>
+              <p>I take pleasure in writing down all my thoughts.<br>Find out what has been on my mind!</p>
+              <a href="blog"><p class="link">View My Blog</p></a>
+            </div>
+          </div>
+        </div>
+        <div id="contact_section">
+          <div id="contact_content">
+            <h6>Let's Get In Touch!</h6>
           </div>
           <div id="social_media">
-            <a href="mailto:bbarret1@binghamton.edu"><img class="social" src="images/Email.png"></a>
-            <a href="http://www.twitter.com/BrianBarrett77"><img class="social" src="images/Twitter.png"></a>
-            <a href="http://www.pinterest.com/bbarret1"><img class="social" src="images/Pintrest.png"></a>
-            <a href="http://www.linkedin.com/pub/brian-barrett/59/722/755"><img class="social" src="images/Linkedin.png"></a>
-            <a href="http://www.github.com/Bbarret1"><img class="social" src="images/Github.png"></a>
+              <a href="mailto:Brian.Francis.Barrett@gmail.com"><img class="social" src="images/Contact_icons/Email.png"></a>
+              <a href="http://www.twitter.com/BrianBarrett77"><img class="social" src="images/Contact_icons/Twitter.png"></a>
+              <a href="http://www.pinterest.com/bbarret1"><img class="social" src="images/Contact_icons/Pintrest.png"></a>
+              <a href="http://www.linkedin.com/pub/brian-barrett/59/722/755"><img class="social" src="images/Contact_icons/Linkedin.png"></a>
+              <a href="http://www.github.com/Bbarret1"><img class="social" src="images/Contact_icons/Github.png"></a>
+            </div>
+        </div>
+        <div id="footer">
+          <div id="footer_content">
+            <div id="footer_text">
+            <p>Copyright &copy; 2014, Brian Barrett All Rights Reserved Brian.Francis.Barrett@Gmail.com</p>
+            </div>
           </div>
         </div>
       </div>
-      <div id="footer_background">
+
+    <div id="skrollr_pictures">
+      <div id="img_window" data-0="margin-top:100px;height:700px;" data-650="margin-top:-225px;height:700px;" data-800="margin-top:-300px;height:400px;" data-801="margin-top:-700px;">
+        <img id="picture_1" src="images/Background/Profile.jpg"/>
       </div>
-    </body>
+      <div id="img_window_2" data-350="margin-top:340px;height:700px;" data-1350="margin-top:-160px;height:700px;" data-1600="margin-top:-285px;height:400px;" data-1601="margin-top:-700px;">
+        <img id="picture_2" src="images/Background/People.jpg"/>
+      </div>
+      <div id="img_window_3" data-1150="margin-top:340px;height:700px;" data-2150="margin-top:-160px;height:700px;" data-2400="margin-top:-285px;height:400px;" data-2401="margin-top:-700px;">
+        <img id="picture_3" src="images/Background/Coding.jpg"/>
+      </div>
+      <div id="img_window_4" data-1950="margin-top:341px;height:700px;" data-2950="margin-top:-160px;height:700px;" data-3200="margin-top:-285px;height:400px;" data-3201="margin-top:-700px;">
+        <img id="picture_4" src="images/Background/Flower.jpg"/>
+      </div>
+      <div id="img_window_5" data-2750="margin-top:350px;height:700px;" data-3320="margin-top:45px;height:700px;">
+        <img id="picture_5" src="images/Background/Sunset.jpg"/>
+      </div>
+    </div>
+
+    <div id="skrollr_header" data-390="z-index:0;" data-391="z-index:200;">
+      <div id="top_bar">
+        <div id="top_bar_content">
+          <a href="/">
+            <div id="top_bar_left">
+              <img src="images/InvertBB.png">
+              <h4>Brian Barrett</h4>
+            </div>
+          </a>
+          <div id="top_bar_right">
+            <ul id="buttons">
+              <a href="blog">
+                <li>
+                  <h6>Blog</h6>
+                </li>
+              </a>
+              <a href="photography">
+                <li>
+                  <h6>Photography</h6>
+                </li>
+              </a>
+              <a href="projects">
+                <li>
+                  <h6>Projects</h6>
+                </li>
+              </a>
+              <a href="about">
+                <li>
+                  <h6>About</h6>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+       window.onload = function() {
+              skrollr.init({
+              forceHeight: true,
+              smoothScrolling: false
+      });
+      }
+    </script>
+
+  </body>
 </html>
