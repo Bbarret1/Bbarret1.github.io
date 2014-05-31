@@ -81,7 +81,7 @@
  | | | | | | | | About Page | | | | | | |
 \*----------------------------------------*/
   #profile_section{
-    background-image: url(/images/Background/Profile.jpg);
+    background-image: url(../images/Background/Profile.jpg);
     float:left;
     height:400px;
     width:100%;
@@ -284,39 +284,17 @@
   }
   #blog_page_date{
     font-size: 1.2rem;
+    color: #3f3f3f;
+    font-size: 80%;
+  }
+  .blog_post_title{
+    font-size: 1.2rem;
+    color: #744aa3;
   }
 
-
-
-
-
-
-
-
-
-.blog_post_title{
-  font-size: 1.2rem;
-  color:#3f3f3f;
-}
-
-
-
-
-/*********************List of Posts on the Blog Home*************************/
-
-
-.posts span {
-  color: #3f3f3f;
-  font-size: 80%;
-}
-.posts a{
-  color: #744aa3;
-}
-
-
-/*-------------------------------------------------------------------------------------------*/
-/*--------------------------------------Begin Post Pages-------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
+/*----------------------------------------*\
+ | | | | | | | | Blog Page | | | | | | | |
+\*----------------------------------------*/
 #post_window{
   position:fixed;
   height: -moz-calc(100% - 277px);
@@ -409,51 +387,47 @@
   height:50px;
 }
 
-/*-------------------------------------------------------------------------------------------*/
-/*---------------------------------------End Post Pages--------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-
 
 /*----------------------------------------*\
  | | | | | Universal Footer Divison | | | |
 \*----------------------------------------*/
-#footer{ 
-  z-index: 1;
-  bottom: 0; 
-  left: 0;  
-  clear:both;
-  position: relative;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  margin-top: -50px;
-  background-color: #3f3f3f;
-}
-#footer_content{
-  width:600px;
-  height:50px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #f8f8f8;
-}
-#footer_text{
-  margin-top: 20px;
-  float:left;
-}
-#footer_text p{
-  font-size: .75rem;
-}
-#social_media{
-  float:right;
-}
-.social{
-  margin-top: 10px;
-  height:30px;
-  width:30px;
-}
-.social:hover{
-  opacity:.5;
-}
+  #footer{ 
+    z-index: 1;
+    bottom: 0; 
+    left: 0;  
+    clear:both;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: -50px;
+    background-color: #3f3f3f;
+  }
+  #footer_content{
+    width:600px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f8f8f8;
+  }
+  #footer_text{
+    margin-top: 20px;
+    float:left;
+  }
+  #footer_text p{
+    font-size: .75rem;
+  }
+  #social_media{
+    float:right;
+  }
+  .social{
+    margin-top: 10px;
+    height:30px;
+    width:30px;
+  }
+  .social:hover{
+    opacity:.5;
+  }
 
 /*----------------------------------------*\
  | | | | | | | Color's Used | | | | | | | |
