@@ -1,236 +1,327 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!--meta-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
 
-    <title>Brian Barrett|Home</title>
+    <title>Brian Barrett | Home</title>
 
     <!--Image to the left of the address-->
-     <link rel="icon" type="image/png" href="images/RegularBB.png"/>
+     <link rel="icon" type="image/png" href="images/Folio.png"/>
     <!-- CSS Reset -->
-    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="reset.css"/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/original.css"/>
-    <!--CSS for Font-->
-    <link type="text/css" rel="stylesheet" href="fonts/Junction/Junction.css"/>
-    <link type="text/css" rel="stylesheet" href="fonts/Fanwood/Fanwood.css"/>
+    <link rel="stylesheet" href="original.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,700,300,400' rel='stylesheet' type='text/css'>
 
-    <!-- (DON"T KNOW WHAT THIS IS...syntax highlighting CSS -->
-    <link rel="stylesheet" href="css/syntax.css"/>
+    <style>
 
-    <script type="text/javascript" src="scripts/libs/jquery2.1.min.js"></script>
-    <script type="text/javascript" src="scripts/libs/skrollr.js"></script>
+      /*-------------------------------------------------------------------------------------------*/
+      /*-----------------------------------------CSS RESET-----------------------------------------*/
+      body{ margin:0; padding:0; font-family: 'Roboto Slab'; background-color: #ffffff; font-weight: 300;}
+      body a{ text-decoration: none; color:black;}
+      html{ font-size:100%; font-size: 16px;}
+      h1,h2,h3,h4,h5,h6,p{ padding:0; margin:0; font-weight: 300;}
+      h1{ font-size: 4.8rem; }
+      h2{ font-size: 2.5rem; }
+      h3{ font-size: 2.2rem; }
+      h4{ font-size: 1.9rem; }
+      h5{ font-size: 1.6rem; }
+      h6{ font-size: 1.3rem; }
+      p,li{ font-size: 1rem; }
+      ul{ list-style-type: none; padding: 0px; margin: 0px; }
+      img{margin:0; padding:0;}
+
+      /*---------------------------------------END CSS RESET---------------------------------------*/
+      /*-------------------------------------------------------------------------------------------*/
+
+      /*----------------------------------------*\
+      New colors
+      My Site
+      Light Green:  #43D995;
+      Dark Green:   #1B8856;
+      Dark Grey:    #3f3f3f;
+      Light Grey:   #767676;
+
+      Orange:       #FF9C36;
+
+      Monkey Site
+
+      Light Blue:   #06F8CF;
+      Light Tan:    #FFD17C;
+      Middle Brown: #8B6400;
+      Dark Brown:   #573E00;
+
+      /*----------------------------------------*\
+       | | | | | | Header Divison | | | | | |
+      \*----------------------------------------*/
+      #header{
+        background-color: #ffffff;
+        width: 100%;
+        height: 76px;
+        border-bottom: solid 1px #f3f3f3;
+        position:fixed;
+      }
+      #headercontent{
+        width:600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+      }
+      .headerlogo{
+        height:50px;
+        width:50px;
+        float:left;
+      }
+      .headertext{
+        margin-top: 15px;
+        margin-left: 10px;
+        float:right;
+        color: black;
+      }
+      .headertext:hover{
+        color:#FF9C36;
+      }
+      #link1{
+        float:left;
+      }
+      #link2{
+        float:right;
+      }
+
+      /*----------------------------------------*\
+       | | | | | | Name & Logo Divison | | | | | |
+      \*----------------------------------------*/
+      #intro{
+        height:400px;
+        width:100%;
+        padding-top: 75px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #f3f3f3;
+      }
+      #logo{
+        margin-left: auto;
+        margin-right:auto;
+          height:200px;
+        width:200px;
+        margin-bottom: 20px;
+      }
+      #portfolio_flat{
+        height:200px;
+        width:200px;
+        margin-top: 20px;
+      }
+      #name{
+        text-align: center;
+        color: black;
+        font-weight: 100;
+      }
+
+      /*----------------------------------------*\
+       | | | | | | Saunders Divison | | | | | |
+      \*----------------------------------------*/
+      #blogintro{
+        width:100%;
+        height:500px;
+        background-color: #43D995;
+        border-bottom: 1px solid #f3f3f3;
+      }
+      #blogintrocontent{
+        width:1100px;
+        height:500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #saunders{
+        margin-top: 50px;
+        height:400px;
+        width:400px;
+        float:left;
+      }
+      #saunderstext{
+        float:right;
+        padding-top: 100px;
+        width:700px;
+        height:400px;
+      }
+      #watch{
+        margin-left: 120px;
+      }
+      #asterisk:hover{
+        color:#FF9C36;
+      }
+
+      /*----------------------------------------*\
+       | | | | | | About Divison | | | | | |
+      \*----------------------------------------*/
+      #about{
+        width:1200px;
+        height:650px;
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;  
+      }
+      #bubbles{
+        margin-top: 20px;
+        height:auto;
+        width:1200px;
+      }
+      #experience{
+        width:1200px;
+        height:2200px;
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;  
+      }
+      #box{
+        margin-top: 20px;
+        height:auto;
+        width:1200px;
+      }
+
+      /*----------------------------------------*\
+       | | | | | | | Quote Divison | | | | | | |
+      \*----------------------------------------*/
+      #quote{
+        width:100%;
+        height:300px;
+        background-color: #43D995;
+        border-bottom: 1px solid #f3f3f3;
+        text-align: center;
+      }
+      #quote h1{
+        padding-top: 65px;
+      }
+      #quote h5{
+        margin-top: 30px;
+        margin-left: 800px;
+      }
+
+      /*----------------------------------------*\
+       | | | | | | | | Map Divison | | | | | | |
+      \*----------------------------------------*/
+      #map{
+        width:1200px;
+        height:1800px;
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;  
+      }
+
+      /*----------------------------------------*\
+       | | | | | | Footer Divison | | | | | |
+      \*----------------------------------------*/
+      #footer{ 
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        background-color: #3f3f3f;
+      }
+      #footer_content{
+        width:800px;
+        height:50px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #f8f8f8;
+      }
+      #footer_text{
+        margin-top: 20px;
+        float:left;
+      }
+      #footer_text p{
+        font-size: .75rem;
+      }
+      #social_media{
+        float:right;
+      }
+      .social{
+        margin-top: 10px;
+        height:30px;
+        width:30px;
+      }
+      .social:hover{
+        opacity:.5;
+      }
+
+    </style>
 
   </head>
 
   <body>
-      <div id="first_page">
-        <div id="header">
-        	<div id="logo_and_name">
-        		<a href="/">
-        		<div id="logo">
-            		<img src="images/InvertBB.png">
-          	</div>
-          	<div id="first_name">
-          		<h1>Brian</h1>
-          	</div>
-          	<div id="first_name_line">
-          	</div>
-          	<div id="last_name">
-          		<h1>Barrett</h1>
-          	</div>
-          	<div id="last_name_line">
-              </div>
-          	</a>
-        	</div>
-      		<ul id="button_section">
-      			<a href="blog">
-      				<li id="blog">
-      					<h5>Blog</h5>
-      					<div id="blog_line">
-      					</div>
-      				</li>
-      			</a>
-      			<a href="photography">
-      				<li id="photo">
-      					<h5>Photography</h5>
-      					<div id="photo_line">
-      					</div>
-      				</li>
-      			</a>
-            <a href="projects">
-              <li id="projects">
-                <h5>Projects</h5>
-                <div id="projects_line">
-                </div>
-              </li>
-            </a>
-      			<a href="about">
-      				<li id="about_me">
-      					<h5>About</h5>
-      					<div id="about_me_line">
-      					</div>
-      				</li>
-      			</a>
-        	</ul>
-        </div>
+    <div id="header">
+      <div id="headercontent">
+          <a id="link1" href="www.BrianBarrett.me">
+            <img class="headerlogo" src="images/Folio.png"/>
+            <p class="headertext">About Brian Barrett</p>
+          </a>
+          <a id="link2" href="seamonkeycertified.tumblr.com">
+            <img class="headerlogo" src="images/Seamonkey.png"/>
+            <p class="headertext">Sea Monkey Certified</p>
+          </a>
+      </div>
+    </div>
 
-        <div id="breaking_line">
-        </div>
+    <div id="intro">
+      <div id="logo">
+        <img id="portfolio_flat" src="images/Folio.png"/>
+      </div>
+          <h1 id="name">Brian Barrett</h1>
+    </div>
 
-        <div id="welcome_section">
-          <div id="welcome_content">
-        		<h3>Welcome!</h3>
-          </div>
+    <div id="blogintro">
+      <div id="blogintrocontent">
+        <img id="saunders" src="images/Monkey.png"/>
+        <div id="saunderstext">
+          <h5 id="is">Saunders is a <i>Sea Monkey.</i></h5>
+          <br>
+          <h2 id="hard">Humans are destroying his home.</h2>
+          <br>
+          <h5 id="to">Thousands of plastic pieces<i><a id="asterisk" href="http://oceancrusaders.org/crusades/plastic-crusades/plastic-statistics/">*</a></i> are dumped into the ocean every day, and I am tired of taking part in this. I've asked him to help me change to a Zero Waste Lifestyle. Watch the transformation <i><a id="asterisk" href="http://seamonkeycertified.tumblr.com">here.</a></i></h5>
         </div>
+      </div>
+    </div>
 
-        <div id="block_section">
-          <div class="first_block">
-          </div>
-          <div class="block">
-          </div>
-          <div class="block">
-          </div>
-          <div class="block">
-          </div>
-          <div class="block">
-          </div>
-          <div class="block">
-          </div>
-          <div class="block">
-          </div>
-          <div class="block">
-          </div>
-          <div class="block">
-          </div>
-        </div>
 
-        <div id="people_section" class="section">
-          <div class="center_section">
-            <img class="flat_left" id="peopleflat" src="images/Flat_graphics/Peopleflat.png"/>
-            <div class="text_right">
-              <h2>I Love People</h2>
-              <p> I really enjoy working and collaborating with<br>people whose end goal is helping those in need.</p>
-              <a href="about_me"><p class="link">View My Bio</p></a>
-            </div>
-          </div>
-        </div>
-        <div id="code_section" class="section">
-          <div class="center_section">
-            <img class="flat_right" id="codeflat" src="images/Flat_graphics/Codeflat.png"/>
-            <div class="text_left">
-              <h2>I'm Addicted To Coding</h2>
-              <p>Currently I know CSS3, HTML5, and Javascript,<br>and I am learning more all the time.</p>
-              <a href="projects"><p class="link">View My Projects</p></a>
-            </div>
-          </div>
-        </div>
-        <div id="nature_section" class="section">
-          <div class="center_section">
-            <img class="flat_left" id="photographyflat" src="images/Flat_graphics/Photographyflat.png"/>
-            <div class="text_right">
-              <h2>I Enjoy Nature</h2>
-              <p>I love to take pictures of it, experience it, <br>and I try to do everything I can to save it.</p>
-              <a href="photography"><p class="link">View My Photography</p></a>
-            </div>
-          </div>
-        </div>
-        <div id="blog_section" class="section">
-          <div class="center_section">
-            <img class="flat_right" id="blogflat" src="images/Flat_graphics/Blogflat.png"/>
-            <div class="text_left">
-              <h2>I Never Stop Thinking</h2>
-              <p>I take pleasure in writing down all my thoughts.<br>Find out what has been on my mind!</p>
-              <a href="blog"><p class="link">View My Blog</p></a>
-            </div>
-          </div>
-        </div>
-        <div id="contact_section">
-          <div id="contact_content">
-            <h6>Let's Get In Touch!</h6>
-          </div>
-          <div id="social_media">
-              <a href="mailto:Brian.Francis.Barrett@gmail.com"><img class="social" src="images/Contact_icons/Email.png"></a>
-              <a href="http://www.twitter.com/BrianBarrett77"><img class="social" src="images/Contact_icons/Twitter.png"></a>
-              <a href="http://www.pinterest.com/bbarret1"><img class="social" src="images/Contact_icons/Pintrest.png"></a>
-              <a href="http://www.linkedin.com/pub/brian-barrett/59/722/755"><img class="social" src="images/Contact_icons/Linkedin.png"></a>
-              <a href="http://www.github.com/Bbarret1"><img class="social" src="images/Contact_icons/Github.png"></a>
-            </div>
-        </div>
-        <div id="footer">
+
+    <div id="about">
+      <img id="bubbles" src="images/Bubbles.png"/>
+    </div>
+
+    <div id="experience">
+      <img id="box" src="images/Experiences.png"/>
+    </div>
+
+    <div id="quote">
+      <h1>"I'm always a work in progress"</h1>
+      <h5>-Brian Barrett<h5>
+    </div>
+
+
+    <div id="map">
+      <img id="box" src="images/Map.png"/>
+    </div>
+
+    
+
+
+    <div id="footer">
           <div id="footer_content">
             <div id="footer_text">
-            <p>Copyright &copy; 2014, Brian Barrett All Rights Reserved Brian.Francis.Barrett@Gmail.com</p>
+            <p>Copyright &copy; 2015, Brian Barrett All Rights Reserved hi@BrianBarrett.me</p>
+            </div>
+            <div id="social_media">
+              <a href="mailto:Brian.Francis.Barrett@gmail.com"><img class="social" src="images/Email.png"/></a>
+              <a href="http://www.pinterest.com/bbarret1"><img class="social" src="images/Pintrest.png"/></a>
+              <a href="http://www.linkedin.com/pub/brian-barrett/59/722/755"><img class="social" src="images/Linkedin.png"/></a>
             </div>
           </div>
-        </div>
-      </div>
-
-    <div id="skrollr_pictures">
-      <div id="img_window" data-0="margin-top:100px;height:900px;" data-10="margin-top:95px;height:900px;" data-650="margin-top:-225px;height:700px;" data-800="margin-top:-300px;height:400px;" data-801="margin-top:-700px;">
-        <img id="picture_1" src="images/Background/Profile.jpg"/>
-      </div>
-      <div id="img_window_2" data-350="margin-top:340px;height:700px;" data-1350="margin-top:-160px;height:700px;" data-1600="margin-top:-285px;height:400px;" data-1601="margin-top:-700px;">
-        <img id="picture_2" src="images/Background/People.jpg"/>
-      </div>
-      <div id="img_window_3" data-1150="margin-top:340px;height:700px;" data-2150="margin-top:-160px;height:700px;" data-2400="margin-top:-285px;height:400px;" data-2401="margin-top:-700px;">
-        <img id="picture_3" src="images/Background/Coding.jpg"/>
-      </div>
-      <div id="img_window_4" data-1950="margin-top:341px;height:700px;" data-2950="margin-top:-160px;height:700px;" data-3200="margin-top:-285px;height:400px;" data-3201="margin-top:-700px;">
-        <img id="picture_4" src="images/Background/Flower.jpg"/>
-      </div>
-      <div id="img_window_5" data-2750="margin-top:350px;height:700px;" data-3320="margin-top:45px;height:700px;">
-        <img id="picture_5" src="images/Background/Sunset.jpg"/>
-      </div>
     </div>
 
-    <div id="skrollr_header" data-390="z-index:0;" data-391="z-index:200;">
-      <div id="top_bar">
-        <div id="top_bar_content">
-          <a href="/">
-            <div id="top_bar_left">
-              <img src="images/InvertBB.png">
-              <h4>Brian Barrett</h4>
-            </div>
-          </a>
-          <div id="top_bar_right">
-            <ul id="buttons">
-              <a href="blog">
-                <li>
-                  <h6>Blog</h6>
-                </li>
-              </a>
-              <a href="photography">
-                <li>
-                  <h6>Photography</h6>
-                </li>
-              </a>
-              <a href="projects">
-                <li>
-                  <h6>Projects</h6>
-                </li>
-              </a>
-              <a href="about">
-                <li>
-                  <h6>About</h6>
-                </li>
-              </a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script type="text/javascript">
-       window.onload = function() {
-              skrollr.init({
-              forceHeight: true,
-              smoothScrolling: false
-      });
-      }
-    </script>
+
 
   </body>
 </html>
